@@ -1,0 +1,12 @@
+Flask==2.2.2
+Flask-Cors==3.0.10
+Flask-SQLAlchemy==2.5.1
+
+gunicorn==20.1.0
+
+pandas
+joblib
+spacy
+
+scikit-learn
+
