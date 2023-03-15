@@ -59,8 +59,8 @@ def home():
 @app.route('/summary', methods=['POST'])
 @cross_origin()
 def summary():
-    data = request.get_json()
-    return summarizer(data["content"])
+    # data = request.get_json()
+    return "Subham"
 
 
 if __name__ == '__main__':
