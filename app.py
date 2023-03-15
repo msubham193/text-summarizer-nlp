@@ -60,7 +60,7 @@ def home():
 @cross_origin()
 def summary():
     data = request.get_json()
-    return data
+    return summarizer(data['content'])
 
 
 if __name__ == '__main__':
