@@ -6,7 +6,6 @@ from string import punctuation
 
 
 def summarizer(text):
-    print("ll")
     stop_words = list(STOP_WORDS)
     nlp = spacy.load('en_core_web_sm')
     doc = nlp(text)
