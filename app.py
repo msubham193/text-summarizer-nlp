@@ -20,7 +20,9 @@ def home():
 @app.route('/summary', methods=['GET','POST'])
 @cross_origin()
 def summary():
-    data = request.get_json()
+    if request.method == 'POST':
+       data = request.get_json()
+       
     return summarizer(data['content'])
 
 
