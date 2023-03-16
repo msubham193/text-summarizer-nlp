@@ -17,14 +17,17 @@ def home():
     return "Sonu"
 
 
-@app.route('/summary', methods=['GET','POST'])
+@app.route('/summary', methods=['GET', 'POST'])
 @cross_origin()
 def summary():
     if request.method == 'POST':
-       data = request.get_json()
-       
+        data = request.get_json()
+    else:
+        return "no data"
+
     return summarizer(data['content'])
 
 
 if __name__ == '__main__':
+    debug = True
     app.run()
